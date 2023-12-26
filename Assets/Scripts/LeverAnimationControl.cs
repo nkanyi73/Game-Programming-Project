@@ -5,27 +5,26 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class LeverAnimationControl : MonoBehaviour
 {
-    public Animator doorAnimator;
-    public Camera mainCamera;
-    public Camera doorCamera;
+    public Animator axeAnimator;
+    public Collider axeCollider;
     private void OnTriggerEnter(Collider other)
     {
-        doorCamera.enabled = true;
-        mainCamera.enabled = false;
-        doorAnimator.SetBool("isOpen", true);
-        StartCoroutine();
+        Debug.Log("Collision Detected");
+        axeAnimator.SetBool("isActive", false);
+        axeCollider.enabled = false;
+        //StartCoroutine();
     }
 
-    IEnumerator RevertToMainCamera()
-    {
-        yield return new WaitForSeconds(5);
-        mainCamera.enabled = true;
-        doorCamera.enabled = false;
+    //IEnumerator RevertToMainCamera()
+    //{
+    //    yield return new WaitForSeconds(5);
+    //    mainCamera.enabled = true;
+    //    doorCamera.enabled = false;
 
-    }
+    //}
 
-    void StartCoroutine()
-    {
-        RevertToMainCamera();
-    }
+    //void StartCoroutine()
+    //{
+    //    RevertToMainCamera();
+    //}
 }
