@@ -10,6 +10,7 @@ public class PlatformControl : MonoBehaviour
     private List<Vector3> leftPositions = new List<Vector3>();
     private List<Vector3> rightPositions = new List<Vector3>();
     private int numberOfBarrels;
+    public AudioSource source;
 
     private void Start()
     {
@@ -33,6 +34,7 @@ public class PlatformControl : MonoBehaviour
 
             if (rb != null)
             {
+                source.Play();
                 // Access the mass property of the Rigidbody
                 float mass = rb.mass;
                 leftGate.transform.position -= new Vector3(0f, 0f, mass * 5.0f) * 0.2f * Time.deltaTime;
@@ -47,6 +49,7 @@ public class PlatformControl : MonoBehaviour
     {
         if (other.CompareTag("Barrel"))
         {
+            source.Play();
             leftGate.transform.position = leftPositions[numberOfBarrels-2];
             rightGate.transform.position = rightPositions[numberOfBarrels-2];
             leftPositions.RemoveAt(numberOfBarrels-1);
