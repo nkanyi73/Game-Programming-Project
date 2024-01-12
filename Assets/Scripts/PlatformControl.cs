@@ -50,10 +50,22 @@ public class PlatformControl : MonoBehaviour
         if (other.CompareTag("Barrel"))
         {
             source.Play();
-            leftGate.transform.position = leftPositions[numberOfBarrels-2];
-            rightGate.transform.position = rightPositions[numberOfBarrels-2];
-            leftPositions.RemoveAt(numberOfBarrels-1);
-            rightPositions.RemoveAt(numberOfBarrels-1);
+            if (numberOfBarrels == 1)
+            {
+                leftGate.transform.position = leftPositions[numberOfBarrels - 1];
+                rightGate.transform.position = rightPositions[numberOfBarrels - 1];
+                leftPositions.RemoveAt(numberOfBarrels);
+                rightPositions.RemoveAt(numberOfBarrels);
+            }
+            else
+            {
+
+                leftGate.transform.position = leftPositions[numberOfBarrels - 2];
+                rightGate.transform.position = rightPositions[numberOfBarrels - 2];
+                leftPositions.RemoveAt(numberOfBarrels - 1);
+                rightPositions.RemoveAt(numberOfBarrels - 1);
+            }
+            
             numberOfBarrels--;
         }
     }

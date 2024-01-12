@@ -1,0 +1,94 @@
+﻿title: Entry
+tags:
+---
+<<Set_Audio_To_Player YarnCommands>>
+Main Player: Hello... Hello... Can... Can anyone hear me? #line:02a1131 
+Main Player: Wh... Where... What is this place? #line:00598fe 
+
+<<Set_Audio_To_Narrator YarnCommands>>
+Player 2: Matt...Can you hear me? #line:0bdc3c0 
+
+<<Set_Audio_To_Player YarnCommands>>
+Main Player: Amy?... Can you hear me?... AMY?... #line:07ced10 
+
+<<Set_Audio_To_Narrator YarnCommands>>
+Player 2: I'm in a room with torches and some barrels. I'm worried that I can't get out...I see a door but no way to open it!! #line:06751c8 
+
+<<Set_Audio_To_Player YarnCommands>>
+Main Player: Hold on. I'll try find you. How did we get here? #line:012974d 
+
+<<Set_Audio_To_Narrator YarnCommands>>
+Player 2: I think Jack put in the wrong coordinates back in the lab that sent us here. We need to find a way to reach him to get us back. #line:0bff257 
+
+<<Set_Audio_To_Player YarnCommands>>
+Main Player: Jack's a bit of a nutcase, innit? Anyway... I see some wooden planks. I think I can find a way to get through. #line:09a43a9 
+===
+
+title: Axe
+tags:
+---
+
+
+
+<<Set_Audio_To_Player YarnCommands>>
+Main Player: Whoa...! That... that was a close one...! #line:0666dbe 
+
+<<Set_Audio_To_Narrator YarnCommands>>
+Player 2: Matt are you okay? #line:05cac81 
+
+<<Set_Audio_To_Player YarnCommands>>
+Main Player: Just about... There's a couple of swinging axes here... I need to disable them to get through. #line:0b3395e 
+
+<<Set_Audio_To_Narrator YarnCommands>>
+Player 2: Umm... I think... I'll try pulling a couple of levers back here. Maybe one of them could be the solution? #line:0b25afe 
+
+<<Deactivate_Axe_Collider YarnCommands>>
+===
+
+title: Pressure
+tags:
+---
+<<Set_Audio_To_Narrator YarnCommands>>
+Player 2: Did that work? #line:0066bad
+
+<<Set_Audio_To_Player YarnCommands>>
+Main Player: Yeah..., great job! #line:0485aea
+
+<<Set_Audio_To_Player YarnCommands>> 
+Main Player: Hmm... I'm now in a room with some weird stone circle at the centre. Maybe I'm supposed to be headed in that direction...? #line:06755dc
+
+<<Set_Audio_To_Narrator YarnCommands>>
+Player 2: Oh?... Where have I seen this before?... That's right. Ever heard of pressure plates? You might need your biceps for this one.  #line:00ceeca
+
+<<Set_Audio_To_Player YarnCommands>> 
+Main Player: Aaah yes... I need to get those barrels here. #line:0c18c87 
+===
+title: Fire
+tags:
+---
+<<Set_Audio_To_Narrator YarnCommands>>
+Player 2: Got past that yet? #line:0a716be
+
+<<Set_Audio_To_Player YarnCommands>> 
+Main Player: Yeah... buut... now I'm in a dark room... Hold on... I see a vase, maybe... hmm... maybe if I put a torch in it I'll get some light. #line:046bb1b 
+===
+title: Rotating
+tags:
+---
+<<Set_Audio_To_Player YarnCommands>>
+Main Player: And let there be light... haha..., Wait a second..., I think I'm trapped. I see a lever at the end of the hallway. I'll try pulling it. #line:00b2406 
+===
+title: End
+tags:
+---
+<<Set_Audio_To_Narrator YarnCommands>>
+Player 2: Hey... Matt..., you okay?... It's beginning to get a bit...a bit lonely in here. #line:01febea
+
+<<Set_Audio_To_Player YarnCommands>> 
+Main Player: Yeah..., that last one was... quite... hmm... interesting. Anyway..., I think I'm getting closer to you. #line:0947a85 
+
+<<Set_Audio_To_Narrator YarnCommands>>
+Player 2: I see a door right in front of me..., but... but... I just can't open it. Try looking for other levers in other rooms. #line:03c0cc0 
+
+<<Open_Door_To_Music_Room YarnCommands>>
+===

@@ -5,6 +5,7 @@ using UnityEngine;
 public class TorchControl : MonoBehaviour
 {
     public GameObject[] torches;
+    public GameObject[] hallway;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,7 @@ public class TorchControl : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collision Detected");
+        other.transform.SetParent(transform.parent);
         //if (other.CompareTag("Torch"))
         {
             foreach (var item in torches)
@@ -23,9 +24,13 @@ public class TorchControl : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        foreach (var item in torches)
+        {
+            item.SetActive(false);
+        }
     }
+
+  
 }
