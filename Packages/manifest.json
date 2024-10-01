@@ -3,6 +3,7 @@
     "com.meta.xr.sdk.avatars": "24.0.1",
     "com.meta.xr.sdk.avatars.sample.assets": "24.0.0",
     "com.meta.xr.sdk.interaction.ovr.samples": "60.0.0",
+    "com.normalvr.normcore": "2.9.1",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.collab-proxy": "2.1.0",
     "com.unity.ide.rider": "3.0.25",
@@ -51,5 +52,15 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "Normal",
+      "url": "https://normcore-registry.normcore.io",
+      "scopes": [
+        "com.normalvr",
+        "io.normcore"
+      ]
+    }
+  ]
 }
